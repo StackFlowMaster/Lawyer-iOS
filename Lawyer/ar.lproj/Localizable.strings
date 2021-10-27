@@ -1,0 +1,118 @@
+/* 
+  Localizable.strings
+  Lawyer
+
+  Created by Admin on 2/12/20.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+
+"OK" = "Ok";
+"CANCEL" = "Cancel";
+"LOADING" = "Loading";
+"LOGGED_IN" = "Logged in";
+"SENDING" = "Sending";
+"COMPLETED" = "Completed";
+"DELETE" = "Leave";
+"DELETED" = "Left";
+"DELETING" = "Leaving...";
+"WARNING" = "Warning";
+"BLOCK" = "Block";
+"UNBLOCK" = "Unblock";
+"LOGIN_AS" = "Login as";
+"LOGOUT" = "Logout";
+"LOGOUTING" = "Logout...";
+"TYPING" = "Typing...";
+"CONNECTING_TO_CHAT" = "Connecting to chat...";
+"CONNECTED" = "Connected";
+"DISCONNECTED" = "Disconnected";
+"RECONNECTED" = "Reconnected";
+"LOGGING_IN_AS" = "Logging in REST as ";
+"LOADING_DIALOG" = "Loading dialog";
+"UPDATING_DIALOG" = "Updating dialog";
+"LOADING_DIALOGS" = "Loading dialogs";
+"DONE" = "Done";
+"ADDED" = "added";
+"CREATE_NEW" = "created new dialog with: ";
+"CALL" = "Call";
+
+// chat dialog
+"MESSAGE_PLACEHOLDER" = "Message";
+"CANT_SEND_A_MESSAGE" = "Can't send a message";
+"LOADING_USERS" = "Loading users";
+"CANT_DOWNLOAD_USERS" = "Can't download users";
+"CANT_DOWNLOAD_DIALOGS" = "Can't download dialogs";
+"DIALOG_REMOVED" = "Dialog has been removed";
+"FAILED_LOAD_DIALOGS" = "Failed to load dialogs";
+"YOU_ARE_IN_THE_BLACKLIST" = "You are in the blacklist";
+"FORBIDDEN" = "forbidden";
+"LOADING_MESSAGES" = "Loading messages";
+"UPLOADING_ATTACHMENT" = "Uploading attachment";
+"FAILED_UPLOAD_ATTACHMENT" = "Attachment failed to Upload";
+"ENTER_CHAT_NAME" = "Enter chat name";
+"STR_DIALOG_CREATED" = "Dialog created";
+"CHAT_SEND" = "Send";
+"LAST_ACTIVITY_DATE" = "last_activity_date";
+"ADD_OCCUPANTS" = "Add occupants";
+"CREATE" = "Create";
+"NEW_CHAT" = "New chat";
+"NEW_MESSAGE" = "New message";
+"USER_HAS_LEFT" = "has left dialog.";
+"CHAT_INFO" = "Chat info";
+
+// message text statuses
+"READ_STATUS" = "Read";
+"DELIVERED_STATUS" = "Delivered";
+"SEEN_STATUS" = "Seen";
+
+"SENT_STATUS" = "Sent";
+"NOT_SENT_STATUS" = "Didn't send";
+"SENDING_STATUS" = "Sending";
+
+"UNKNOWN_USER" = "Unknown";
+
+// TableViewCell identifiers
+"CELL_USER" = "UserTableViewCellIdentifier";
+"CELL_DIALOG" = "dialogcell";
+
+// Segues
+"SEGUE_GO_TO_INFO" = "goToInfo";
+"SEGUE_GO_TO_DIALOGS" = "goToDialogs";
+"SEGUE_GO_TO_CHAT" = "goToChat";
+"SEGUE_GO_TO_SELECT_OPPONENTS" = "goToSelectOpponents";
+"SEGUE_GO_TO_ADD_OPPONENTS" = "goToAddOpponents";
+
+// User table view cell model
+"PRIVATE" = "private";
+"GROUP" = "group";
+"PUBLIC_GROUP" = "public group";
+
+// Action sheet
+"ADDITIONAL_ACTIONS" = "Additional actions";
+"NOTE_YOU_WILL_NOT_RECEIVE_AMY_P2P_MESSAGES" = "Note that you will not receive any private message from this user";
+"NOTE_YOU_WILL_NOT_RECEIVE_AMY_GROUP_MESSAGES" = "Note that you will not receive any group chat message from this user";
+"DO_YOU_REALLY_WANT_TO_DELETE_SELECTED_DIALOG" = "Do you really want to leave selected dialog?";
+"UNBLOCK_USER_P2P_CHAT" = "Unblock user in 1-1 chat";
+"BLOCK_USER_P2P_CHAT" = "Block user in 1-1 chat";
+"UNBLOCK_USER_GROUP_CHATS" = "Unblock user in all group chats";
+"BLOCK_USER_GROUP_CHATS" = "Block user in all group chats";
+"TRY_AGAIN_MESSAGE" = "Try again";
+"DELETE_MESSAGE" = "Delete";
+
+// Errors
+"ERROR" = "Error";
+"ERROR_DELETING" = "Error leaving";
+"BAD_GATEWAY" = "Bad Gateway, please try again";
+"NETWORK_ERROR" = "Connection network error, please try again";
+"DID_NOT_CONNECT_ERROR" = "Did not connect with error:";
+"FAILED_TO_CONNECT_WITH_ERROR" = "Chat failed with error:";
+"CANNOT_CREATE_DIALOG" = "Can not create dialog";
+"MESSAGE_FAILED_TO_SEND" = "Message failed to send";
+
+// Push notifications
+"PUSH_NOTIFICATION_DIALOG_ID" = "dialog_id";
+"PUSH_NOTIFICATION_MESSAGE" = "message";
+
+
+
+"Error_CheckInternet" = "Please check your internet connection";
+"Error_ShouldLogin" = "You should login to use VideoChat API. Session hasn’t been created. Please try to relogin.";

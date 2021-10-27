@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChatEmptyCell" id="gTV-IL-0wX" customClass="ChatEmptyCell" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTj-nR-feb" customClass="ChatContainerView" customModule="Lawyer" customModuleProvider="target">
+                        <rect key="frame" x="15" y="5" width="240" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="dTW-ei-hat"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pTj-nR-feb" secondAttribute="bottom" constant="5" id="FaW-6m-L4W"/>
+                <constraint firstItem="pTj-nR-feb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ld6-Yd-LHm"/>
+                <constraint firstItem="pTj-nR-feb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="kbQ-uY-gMZ"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="pTj-nR-feb" id="Gi3-hF-TQc"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="170"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4144" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="C3M-tc-m20" customClass="ChatIncomingCell" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_1" translatesAutoresizingMaskIntoConstraints="NO" id="L8j-KZ-jCD" userLabel="Avatar Image View">
+                        <rect key="frame" x="15" y="5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="L8j-KZ-jCD" secondAttribute="height" id="Hoi-wN-6B0"/>
+                            <constraint firstAttribute="width" constant="30" id="MxH-8t-yDw"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lux-vg-6Z5" userLabel="ContainerView" customClass="ChatContainerView" customModule="Lawyer">
+                        <rect key="frame" x="30" y="40" width="180" height="50"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBa-gJ-Bzq" userLabel="Message Container">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_incomingcell" translatesAutoresizingMaskIntoConstraints="NO" id="OF4-tb-KYd">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Message Text" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-WW-zaC" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="10" y="10" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OF4-tb-KYd" firstAttribute="leading" secondItem="cBa-gJ-Bzq" secondAttribute="leading" id="0UB-Zr-AKC"/>
+                                    <constraint firstAttribute="bottom" secondItem="OF4-tb-KYd" secondAttribute="bottom" id="50v-PA-dfZ"/>
+                                    <constraint firstItem="8ct-WW-zaC" firstAttribute="leading" secondItem="cBa-gJ-Bzq" secondAttribute="leading" constant="10" identifier="incCellMsgTextLeadingToMsgContainerLeading" id="MBo-eV-1sQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="OF4-tb-KYd" secondAttribute="trailing" id="N6J-BJ-wyj"/>
+                                    <constraint firstItem="OF4-tb-KYd" firstAttribute="top" secondItem="cBa-gJ-Bzq" secondAttribute="top" id="TOY-Kf-8rs"/>
+                                    <constraint firstItem="8ct-WW-zaC" firstAttribute="top" secondItem="cBa-gJ-Bzq" secondAttribute="top" constant="10" id="W4A-Kb-DuB"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ct-WW-zaC" secondAttribute="trailing" constant="20" id="e74-0T-xyP"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ct-WW-zaC" secondAttribute="bottom" constant="10" id="zpS-6P-sED"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cBa-gJ-Bzq" firstAttribute="leading" secondItem="lux-vg-6Z5" secondAttribute="leading" identifier="incCellMsgContainerLeadingToContainerLeading" id="Iyk-PP-Jxf"/>
+                            <constraint firstAttribute="width" constant="180" id="JJF-la-T3e"/>
+                            <constraint firstAttribute="bottom" secondItem="cBa-gJ-Bzq" secondAttribute="bottom" id="RdV-IS-7Tf"/>
+                            <constraint firstAttribute="trailing" secondItem="cBa-gJ-Bzq" secondAttribute="trailing" identifier="incCellContainerTrailingToMsgContainerTrailing" id="bIP-2g-9Q4"/>
+                            <constraint firstItem="cBa-gJ-Bzq" firstAttribute="top" secondItem="lux-vg-6Z5" secondAttribute="top" id="ioh-br-3Po"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lux-vg-6Z5" secondAttribute="bottom" constant="5" id="2M5-cl-hHP"/>
+                <constraint firstItem="lux-vg-6Z5" firstAttribute="top" secondItem="L8j-KZ-jCD" secondAttribute="bottom" constant="5" id="BD4-Jr-L2N"/>
+                <constraint firstItem="L8j-KZ-jCD" firstAttribute="top" secondItem="C3M-tc-m20" secondAttribute="top" constant="5" id="M6S-ab-Fia"/>
+                <constraint firstItem="lux-vg-6Z5" firstAttribute="leading" secondItem="C3M-tc-m20" secondAttribute="leading" constant="30" id="VtI-y9-V6B"/>
+                <constraint firstItem="L8j-KZ-jCD" firstAttribute="leading" secondItem="C3M-tc-m20" secondAttribute="leading" constant="15" id="bTa-hh-rle"/>
+            </constraints>
+            <size key="customSize" width="252" height="75"/>
+            <connections>
+                <outlet property="avatarView" destination="L8j-KZ-jCD" id="kYF-ZE-tdV"/>
+                <outlet property="containerView" destination="lux-vg-6Z5" id="AK5-pz-Tza"/>
+                <outlet property="containerWidthConstraint" destination="JJF-la-T3e" id="KoJ-3a-aut"/>
+                <outlet property="messageBgImageView" destination="OF4-tb-KYd" id="EUy-2F-B5n"/>
+                <outlet property="messageContainer" destination="cBa-gJ-Bzq" id="9BB-iq-0rq"/>
+                <outlet property="textView" destination="8ct-WW-zaC" id="n9s-Sr-jAx"/>
+            </connections>
+            <point key="canvasLocation" x="76.799999999999997" y="86.806596701649184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_incomingcell" width="195" height="36"/>
+        <image name="ic_avatar_1" width="55.5" height="55.5"/>
+    </resources>
+</document>

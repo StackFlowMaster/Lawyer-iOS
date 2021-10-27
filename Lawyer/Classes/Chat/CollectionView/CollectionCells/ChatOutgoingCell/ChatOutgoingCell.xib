@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="MUd-TY-LP8" customClass="ChatOutgoingCell" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHn-aU-joG" userLabel="ContainerView" customClass="ChatContainerView" customModule="Lawyer">
+                        <rect key="frame" x="75" y="5" width="180" height="50"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGA-Lo-mbI" userLabel="Message Container">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_outgoingcell" translatesAutoresizingMaskIntoConstraints="NO" id="cdm-XV-DNT">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Text" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-pf-rea" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="20" y="10" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gwl-pf-rea" firstAttribute="top" secondItem="UGA-Lo-mbI" secondAttribute="top" constant="10" id="3de-hI-oqR"/>
+                                    <constraint firstItem="cdm-XV-DNT" firstAttribute="top" secondItem="UGA-Lo-mbI" secondAttribute="top" id="AFo-eo-RuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="gwl-pf-rea" secondAttribute="trailing" constant="10" identifier="outgCellMessageTextLabelTrailing" id="C4J-58-vtD"/>
+                                    <constraint firstAttribute="bottom" secondItem="gwl-pf-rea" secondAttribute="bottom" constant="10" id="PbL-3g-Q8K"/>
+                                    <constraint firstAttribute="bottom" secondItem="cdm-XV-DNT" secondAttribute="bottom" id="YxK-6u-BMA"/>
+                                    <constraint firstItem="cdm-XV-DNT" firstAttribute="leading" secondItem="UGA-Lo-mbI" secondAttribute="leading" id="ZaF-az-wnq"/>
+                                    <constraint firstAttribute="trailing" secondItem="cdm-XV-DNT" secondAttribute="trailing" id="vvE-gj-Pdg"/>
+                                    <constraint firstItem="gwl-pf-rea" firstAttribute="leading" secondItem="UGA-Lo-mbI" secondAttribute="leading" constant="20" identifier="outgCellMessageTextLabelLeading" id="x6U-gp-Ps7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" identifier="outgCellContainerWidth" id="D1r-Pq-zcf"/>
+                            <constraint firstItem="UGA-Lo-mbI" firstAttribute="top" secondItem="IHn-aU-joG" secondAttribute="top" identifier="outgCellMessageContainerTopInset" id="Oep-MV-D9j"/>
+                            <constraint firstAttribute="trailing" secondItem="UGA-Lo-mbI" secondAttribute="trailing" identifier="outgCellMessageContainerTrailingInset" id="UcN-qd-Nxu"/>
+                            <constraint firstAttribute="bottom" secondItem="UGA-Lo-mbI" secondAttribute="bottom" identifier="outgCellMessageContainerBottomInset" id="XFF-Rw-dM5"/>
+                            <constraint firstItem="UGA-Lo-mbI" firstAttribute="leading" secondItem="IHn-aU-joG" secondAttribute="leading" identifier="outgCellMessageContainerLeadingInset" id="mRm-gl-BUZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IHn-aU-joG" secondAttribute="bottom" constant="5" identifier="outgCellContainerBottom" id="HI8-MG-YKY"/>
+                <constraint firstAttribute="trailing" secondItem="IHn-aU-joG" secondAttribute="trailing" constant="15" id="ZY5-vo-1Gk"/>
+                <constraint firstItem="IHn-aU-joG" firstAttribute="top" secondItem="MUd-TY-LP8" secondAttribute="top" constant="5" identifier="outgCellContainerTop" id="kQX-PE-key"/>
+            </constraints>
+            <size key="customSize" width="253" height="74"/>
+            <connections>
+                <outlet property="containerView" destination="IHn-aU-joG" id="FxQ-jl-eL2"/>
+                <outlet property="containerWidthConstraint" destination="D1r-Pq-zcf" id="Nht-Pz-NMl"/>
+                <outlet property="messageBgImageView" destination="cdm-XV-DNT" id="qnV-EG-wQg"/>
+                <outlet property="messageContainer" destination="UGA-Lo-mbI" id="qbe-Vg-Mo6"/>
+                <outlet property="textView" destination="gwl-pf-rea" id="y5I-qm-hyU"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="-8"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_outgoingcell" width="375" height="98"/>
+    </resources>
+</document>
